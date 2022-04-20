@@ -1,0 +1,90 @@
+.search {
+  margin: 0 auto;
+  width: 40%;
+  padding: 0 1rem;
+}
+
+.search > p {
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.input {
+  padding-left: 1rem;
+  position: relative;
+}
+
+form > input {
+  width: 75%;
+  height: 2rem;
+  border-radius: 8px;
+  padding: 0 2rem;
+  background-color: #E5E5E5;
+}
+
+form > img {
+  position: absolute;
+  z-index: 1;
+  top: .5rem;
+  left: 1.5rem;
+  border-radius: 0 2px 2px 0;
+  margin: 0;
+  pointer-events: none; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form > button {
+  margin-left: 1rem;
+  padding: 0 2rem;
+  background: #204080;
+  color: #fff;
+  outline: none;
+  border-radius: 6px;
+  height: 2rem;
+  border: none;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 12px;
+  margin: .5rem 7rem 0 0;
+}
+
+.box > a {
+  text-decoration: none;
+  color: black;
+  margin: .5rem auto .5rem auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.output {
+  padding: .8rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.output > img {
+  width:15px;
+  height:15px;
+}
+
+.output > div {
+  margin-left: 1rem;
+  font-size: .8rem;
+}
+
+.output > div > p {
+  margin: 0;
+  padding: .1rem;
+}
+
+.bold {
+  font-weight: bold;
+}

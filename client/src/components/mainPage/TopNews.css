@@ -1,0 +1,44 @@
+.news {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.news > p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-left: 15rem;
+}
+
+.news-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 12rem;
+}
+
+.news-box > a {
+  text-decoration: none;
+  background-color: #d4d4d4;
+  border-radius: 50%;
+  padding: .5rem;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: .3rem 1.5rem;
+}
+
+.desc {
+  font-weight: bold;
+  margin-top: .5rem;
+}
+
+.desc-two {
+  margin-top: 0;
+  opacity: .5;
+}

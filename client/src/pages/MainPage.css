@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main > button {
+  margin-top: 20px;
+  padding: 0 2rem;
+  background: #204080;
+  color: #fff;
+  outline: none;
+  border-radius: 6px;
+  height: 2rem;
+  border: none;
+  position: absolute;
+  right: 1rem;
+}
+
+.logo {
+  margin: 6rem auto 0 auto;
+  padding: 1rem;
+  text-align: center;
+  background: #204080;
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.logo h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.logo p {
+  font-size: .5rem;
+  text-align: center;
+  margin: 0;
+}
+
+.searchapp {
+  margin-top: .5rem;
+  margin-left: 10rem;
+  font-size: .8rem;
+  text-align: center;
+}

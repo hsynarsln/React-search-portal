@@ -1,0 +1,30 @@
+.footer {
+  margin-top: 1rem;
+  padding: 2rem;
+  background-color: rgba(41,78,152,0.72);
+  display: flex;
+  flex-direction: row;
+}
+
+.description {
+  margin: 1rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.address {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.address > span {
+  font-weight: bold;
+}
+
+.email {
+  font-weight: bold;
+}
