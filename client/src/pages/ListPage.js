@@ -19,15 +19,14 @@ const ListPage = () => {
 
   useEffect(() => {
     fetchData();
-    // return () => {
-    //   localStorage.removeItem('search');
-    // };
+    localStorage.removeItem('search');
   }, []);
 
   useEffect(() => {
     if (searchInput) {
       const searchingData = allData.filter(item => item[0].toLowerCase().includes(searchInput.trim().toLowerCase()));
       setSearchedData(searchingData);
+      localStorage.setItem('search', searchInput);
     }
   }, [searchInput]);
 

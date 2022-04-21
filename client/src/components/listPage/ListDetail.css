@@ -8,6 +8,7 @@
   flex-direction: row;
   margin: 0 15rem;
   margin-top: 3rem;
+  position: relative;
 }
 
 .listing {
@@ -18,17 +19,14 @@
 
 ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   width: 100%;
 }
 
 li {
-  height: 5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 li:hover {
@@ -47,4 +45,75 @@ li:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: -.8rem 0;
+}
+
+.sorting {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  margin-left: 1rem;
+  margin-top: -2rem;
+}
+
+.sorting > a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: .2rem .5rem;
+  background-color: #F3F2F2;
+  border: 1px solid #414141;
+  border-radius: 5px;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  position: absolute;
+  top: 50px;
+  width: 11rem;
+  padding: .5rem .5rem;
+  border: 1px solid #8F8F8F;
+  border-radius: 5px;
+  box-shadow: 4px 6px 12px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal > a {
+  padding: .5rem .5rem;
+  cursor: pointer;
+}
+
+.active {
+  background: #B3B3B3;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto 3rem auto;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.pagination > a {
+  border: 1px solid #484848;
+  background: #FFFFFF;
+  margin: 0 .5rem;
+  border-radius: 5px;
+  padding: .3rem .5rem;
+  cursor: pointer;
+}
+
+.current-page {
+  background: #204080 !important;
+  color: #fff;
 }

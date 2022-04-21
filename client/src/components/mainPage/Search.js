@@ -48,8 +48,8 @@ const Search = () => {
       </div>
       {searchedData.length > 0 && searchInput.length > 0 && (
         <div className='box'>
-          {slicedData?.map(item => (
-            <div className='output'>
+          {slicedData?.map((item, index) => (
+            <div className='output' key={index}>
               <img src='/images/location.png' alt='' />
               <div>
                 <p className='bold'>{item[0]}</p>
