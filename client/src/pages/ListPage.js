@@ -49,7 +49,7 @@ const ListPage = () => {
             <button type='submit'>Search</button>
           </form>
         </div>
-        <button>Add new record</button>
+        <button onClick={() => navigate('/add-link')}>Add new record</button>
       </div>
       <div className='list-body'>{searchedData?.length > 0 && searchInput.length > 0 && <ListDetail data={searchedData} />}</div>
     </div>

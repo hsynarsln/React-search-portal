@@ -1,0 +1,57 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.form-group > label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  margin-left: .3rem;
+}
+
+.form-group > input {
+  border: 2px solid #484848;
+  border-radius: 12px;
+  padding: .5rem;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.form-group > input:hover {
+  background: rgba(100, 100, 100, 0.08);
+}
+
+.form-group > p {
+  margin-top: .5rem;
+  margin-bottom: 0;
+  font-size: .8rem;
+  margin-left: .3rem;
+}
+
+.btn {
+  width: 20%;
+  height: 2.5rem;
+  align-self: flex-end;
+  margin: 1rem;
+}
+
+.labelError {
+  color: red;
+}
+
+.inputError {
+  border: 2px solid red !important;
+  font-weight: 100;
+  color: red ;
+}
+
+.inputError::placeholder {
+  color: red;
+}

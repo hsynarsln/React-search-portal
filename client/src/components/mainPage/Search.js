@@ -60,7 +60,11 @@ const Search = () => {
               </div>
             </div>
           ))}
-          {searchedData?.length > 3 && <a onClick={handleSubmit}>Show more...</a>}
+          {searchedData?.length > 3 && (
+            <a href={() => false} onClick={handleSubmit}>
+              Show more...
+            </a>
+          )}
         </div>
       )}
     </div>

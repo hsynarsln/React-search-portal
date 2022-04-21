@@ -51,7 +51,7 @@ const ListDetail = ({ data }) => {
         <div className='listing'>
           <Listing sortedData={sortedData} />
         </div>
-        <Ordering sortedData={sortedData} modalVisible={modalVisible} setSortingValue={setSortingValue} sortingValue={sortingValue} modalHandler={modalHandler} />
+        {data.length > 1 && <Ordering modalVisible={modalVisible} setSortingValue={setSortingValue} sortingValue={sortingValue} modalHandler={modalHandler} />}
       </div>
       <Pagination data={data} currentPage={currentPage} setCurrentPage={setCurrentPage} totalPage={totalPage} />
     </div>

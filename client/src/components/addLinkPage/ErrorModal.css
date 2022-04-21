@@ -1,0 +1,37 @@
+.modal-box {
+  background-color: #C4C4C4;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: row;
+  font-size: .8rem;
+}
+
+.modal-box-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-box-content > p:first-child {
+  font-weight: bold;
+}
+
+.badge {
+  background-color: #FF4E78;
+  color: #fff;
+  padding: .5rem 1rem;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.close-btn {
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: 1rem;
+  width: 1rem;
+  cursor: pointer;
+  padding: auto;
+}
