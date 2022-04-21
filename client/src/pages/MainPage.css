@@ -17,6 +17,10 @@
   right: 1rem;
 }
 
+.main > button:hover {
+  background: #4F75C2;
+}
+
 .logo {
   margin: 6rem auto 0 auto;
   padding: 1rem;

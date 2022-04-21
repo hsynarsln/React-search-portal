@@ -1,0 +1,88 @@
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.list-header > button {
+  margin-right: 1rem;
+  padding: 0 2rem;
+  background: #204080;
+  color: #fff;
+  outline: none;
+  border-radius: 6px;
+  height: 2rem;
+  border: none;
+}
+
+.list-header > button:hover {
+  background: #4F75C2;
+}
+
+.list-logo {
+  padding: 1rem;
+  text-align: center;
+  background: #204080;
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.list-logo h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.list-logo p {
+  font-size: .5rem;
+  text-align: center;
+  margin: 0;
+}
+
+.list-input {
+  width: 70%;
+  padding-left: 1rem;
+  position: relative;
+}
+
+form > input {
+  height: 2rem;
+  border-radius: 8px;
+  padding: 0 2rem;
+  background-color: #E5E5E5;
+}
+
+form > img {
+  position: absolute;
+  z-index: 1;
+  top: .5rem;
+  left: 1.5rem;
+  border-radius: 0 2px 2px 0;
+  margin: 0;
+  pointer-events: none; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form > button {
+  margin-left: 1rem;
+  padding: 0 2rem;
+  background: #204080;
+  color: #fff;
+  outline: none;
+  border-radius: 6px;
+  height: 2rem;
+  border: none;
+}
+
+form > button:hover {
+  background: #4F75C2;
+}

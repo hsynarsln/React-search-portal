@@ -46,6 +46,10 @@ form > button {
   border: none;
 }
 
+form > button:hover {
+  background: #4F75C2;
+}
+
 .box {
   display: flex;
   flex-direction: column;
@@ -60,6 +64,7 @@ form > button {
   margin: .5rem auto .5rem auto;
   text-align: center;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .output {

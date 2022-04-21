@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Search.css';
 
 const Search = () => {
   const [searchInput, setSearchInput] = useState();
   const [allData, setAllData] = useState([]);
   const [searchedData, setSearchedData] = useState([]);
-  console.log(searchedData);
+  const [slicedData, setSlicedData] = useState([]);
+  const navigate = useNavigate();
+  // console.log(searchedData);
 
   const fetchData = async () => {
     const response = await fetch('http://localhost:8080/data');
@@ -15,17 +18,22 @@ const Search = () => {
 
   useEffect(() => {
     fetchData();
+    localStorage.removeItem('search');
   }, []);
 
   useEffect(() => {
-    const searchingData = allData.filter(item => item[0].toLowerCase().includes(searchInput.trim().toLowerCase())).slice(0, 3);
-    setSearchedData(searchingData);
+    if (searchInput) {
+      const searchingData = allData.filter(item => item[0].toLowerCase().includes(searchInput.trim().toLowerCase()));
+      setSearchedData(searchingData);
+      setSlicedData(searchingData.slice(0, 3));
+    }
   }, [searchInput]);
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(searchInput);
+    // console.log(searchInput);
     localStorage.setItem('search', searchInput);
+    navigate('/search-results');
   };
 
   return (
@@ -40,7 +48,7 @@ const Search = () => {
       </div>
       {searchedData.length > 0 && searchInput.length > 0 && (
         <div className='box'>
-          {searchedData?.map(item => (
+          {slicedData?.map(item => (
             <div className='output'>
               <img src='/images/location.png' alt='' />
               <div>
@@ -52,7 +60,7 @@ const Search = () => {
               </div>
             </div>
           ))}
-          <a href=''>Show more...</a>
+          {searchedData?.length > 3 && <a onClick={handleSubmit}>Show more...</a>}
         </div>
       )}
     </div>
