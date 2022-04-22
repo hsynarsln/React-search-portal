@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import AddForm from '../components/addLinkPage/AddForm';
 import ErrorModal from '../components/addLinkPage/ErrorModal';
 import './AddLinkPage.css';
@@ -17,9 +17,9 @@ const AddLinkPage = () => {
           <p>Technology Solutions Development</p>
         </div>
         <div className='header-return'>
-          <Link to={'/search-results'}>
+          <a href={() => false} onClick={() => navigate(-1)}>
             <img width={30} src='/images/left-arrow-2.svg' alt='' />
-          </Link>
+          </a>
           <p>Return to List Page</p>
         </div>
       </div>
