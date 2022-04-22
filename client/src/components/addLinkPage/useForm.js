@@ -13,6 +13,16 @@ const useForm = callback => {
             ...errors,
             fullName: 'Name and surname should contain at least 4 letters'
           });
+        } else if (!new RegExp(/^[A-Z][a-z]*(([,.] |[ '-])[A-Za-z][a-z]*)*(\.?)$/).test(value.trim())) {
+          setErrors({
+            ...errors,
+            fullName: 'Name and surname should contain only letters'
+          });
+        } else if (value.length > 60) {
+          setErrors({
+            ...errors,
+            fullName: 'Name and surname should contain less than 60 letters'
+          });
         } else {
           let newObj = omit(errors, 'fullName');
           setErrors(newObj);
@@ -37,6 +47,16 @@ const useForm = callback => {
             ...errors,
             country: 'Country should contain at least 2 letters'
           });
+        } else if (!new RegExp(/^[A-Z][a-z]*(([,.] |[ '-])[A-Za-z][a-z]*)*(\.?)$/).test(value.trim())) {
+          setErrors({
+            ...errors,
+            country: 'Country should contain only letters'
+          });
+        } else if (value.length > 40) {
+          setErrors({
+            ...errors,
+            country: 'Country should contain less than 40 letters'
+          });
         } else {
           let newObj = omit(errors, 'country');
           setErrors(newObj);
@@ -47,6 +67,16 @@ const useForm = callback => {
           setErrors({
             ...errors,
             city: 'City should contain at least 2 letters'
+          });
+        } else if (!new RegExp(/^[A-Z][a-z]*(([,.] |[ '-])[A-Za-z][a-z]*)*(\.?)$/).test(value.trim())) {
+          setErrors({
+            ...errors,
+            city: 'City should contain only letters'
+          });
+        } else if (value.length > 40) {
+          setErrors({
+            ...errors,
+            city: 'City should contain less than 40 letters'
           });
         } else {
           let newObj = omit(errors, 'city');
