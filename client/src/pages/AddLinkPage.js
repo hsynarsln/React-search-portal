@@ -24,7 +24,7 @@ const AddLinkPage = () => {
         </div>
       </div>
       <div className='addLink-body'>
-        <AddForm setErrorModal={setErrorModal} setModalVisible={setModalVisible} />
+        <AddForm setErrorModal={setErrorModal} setModalVisible={setModalVisible} modalVisible={modalVisible} />
       </div>
       <div className='addLink-footer'>{modalVisible && (errorModal.fullName || errorModal.country || errorModal.city || errorModal.email) && <ErrorModal errorModal={errorModal} setModalVisible={setModalVisible} />}</div>
     </div>

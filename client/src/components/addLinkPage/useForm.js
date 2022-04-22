@@ -13,7 +13,7 @@ const useForm = callback => {
             ...errors,
             fullName: 'Name and surname should contain at least 4 letters'
           });
-        } else if (!new RegExp(/^[A-Z][a-z]*(([,.] |[ '-])[A-Za-z][a-z]*)*(\.?)$/).test(value.trim())) {
+        } else if (!new RegExp(/^[A-Za-z][a-z]*(([,.] |[ '-])[A-Za-z][a-z]*)*(\.?)$/).test(value.trim())) {
           setErrors({
             ...errors,
             fullName: 'Name and surname should contain only letters'
@@ -47,7 +47,7 @@ const useForm = callback => {
             ...errors,
             country: 'Country should contain at least 2 letters'
           });
-        } else if (!new RegExp(/^[A-Z][a-z]*(([,.] |[ '-])[A-Za-z][a-z]*)*(\.?)$/).test(value.trim())) {
+        } else if (!new RegExp(/^[A-Za-z][a-z]*(([,.] |[ '-])[A-Za-z][a-z]*)*(\.?)$/).test(value.trim())) {
           setErrors({
             ...errors,
             country: 'Country should contain only letters'
@@ -68,7 +68,7 @@ const useForm = callback => {
             ...errors,
             city: 'City should contain at least 2 letters'
           });
-        } else if (!new RegExp(/^[A-Z][a-z]*(([,.] |[ '-])[A-Za-z][a-z]*)*(\.?)$/).test(value.trim())) {
+        } else if (!new RegExp(/^[A-Za-z][a-z]*(([,.] |[ '-])[A-Za-z][a-z]*)*(\.?)$/).test(value.trim())) {
           setErrors({
             ...errors,
             city: 'City should contain only letters'
